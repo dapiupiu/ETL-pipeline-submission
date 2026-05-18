@@ -1,0 +1,11 @@
+# Mengabaikan file kredensial Google
+google-sheets-api.json
+
+# Mengabaikan file output lokal agar tidak mengotori repositori
+products.csv
+
+# Mengabaikan folder virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
