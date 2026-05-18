@@ -6,7 +6,7 @@ from datetime import datetime
 def fetching_content(url, session=None):
     """
     Fungsi untuk mengambil konten HTML mentah dari URL tertentu.
-    Dibungkus terpisah agar mudah dilakukan Mock Testing sesuai kriteria.
+    Dibungkus terpisah agar mudah dilakukan Mock Testing.
     """
     if session is None:
         session = requests.Session()
@@ -85,7 +85,7 @@ def scrape_main(base_url, start_page=1, end_page=50):
                     elif "Gender:" in text:
                         gender = text
                 
-                # Mencatat waktu pengambilan data (Kriteria Skilled - 3 Pts)
+                # Mencatat waktu pengambilan data
                 timestamp = datetime.now().isoformat()
                 
                 # Memasukkan data mentah apa adanya ke dalam list (pembersihan dilakukan di tahap Transform)
